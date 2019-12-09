@@ -1,0 +1,340 @@
+:root {
+    --transparent: rgba(0, 0, 0, 0);
+    --selected: rgba(0, 0, 0, .5);
+}
+
+.Node-renderedNote {
+    margin-left: 7px
+}
+
+.Node-openNote {
+    display: none;
+}
+
+/* Images are shrunk to 50 pixel thumbnails */
+.node-displayed-image {
+    vertical-align: middle;
+    max-width: 200px;
+    max-height: 200px;
+    margin-bottom: 5px;
+}
+
+/* Hovering over an image thumbnail enbiggens it */
+.node-displayed-image:hover {
+    vertical-align: middle;
+    max-width: 800px;
+    max-height: 400px;
+}
+
+
+/* fancy inline images */
+.node-displayed-image {
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* Set Up standard tag format */
+.node-tag[title*="@"] {
+    color: black !important;
+    background-color: #ccc!important;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 1px 6px 2px 6px;
+    font-size: 80%;
+}
+
+.node-tag[title*="#"] {
+    color: black !important;
+    background-color: #e6e6e4!important;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 1px 6px 2px 6px;
+    font-size: 80%;
+}
+
+/* Date tags */
+.node-time {
+    color: black !important;
+    background-color: #ccc!important;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 0px 5px 0px 0px;
+    font-size: 70% !important;
+    opacity: 1;
+}
+
+.node-time.is-overdue {
+    color: black !important;
+    background-color: #ffccd1 !important;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 0px 5px 2px 0px;
+    font-size: 70% !important;
+    border-style: none !important;
+}
+
+
+
+/* Set up colored tags */
+.node-tag[title*="@time"] {
+    color: white !important;
+    background-color: #f20866 !important;
+    opacity: 1;
+}
+
+.node-tag[title*="@waiting"] {
+    color: black !important;
+    background-color: #ffccd1 !important;
+    opacity: 1;
+}
+
+
+.node-tag[title*="@next"] {
+    color: black !important;
+    background-color: #faedcc !important;
+    opacity: 1;
+}
+
+.node-tag[title*="@project"] {
+    color: black !important;
+    background-color: #cce4f8 !important;
+    opacity: 1;
+}
+
+.node-tag[title*="@someday"] {
+    color: black !important;
+    background-color: #e0d3f8 !important;
+    opacity: 1;
+}
+
+/* Set up colored tags */
+.node-tag[title*="#pom"] {
+    color: #fddecc !important;
+    background-color: #fddecc !important;
+    opacity: 1;
+}
+
+/* Set up colored tags */
+.node-tag[title*="#pop"] {
+    color: #e8d5cc !important;
+    background-color: #e8d5cc !important;
+    opacity: 1;
+}
+
+/* Set up colored tags */
+/* Set up colored tags */
+.node-tag[title*="#default"] {
+    color: black !important;
+    background-color: #e6e6e4 !important;
+    opacity: 1;
+}
+
+
+.node-tag[title*="#defaultdark"] {
+    color: black !important;
+    background-color: #e6e6e4 !important;
+    opacity: 1;
+}
+
+
+.node-tag[title*="#grey"] {
+    color: black !important;
+    background-color: #cbcccd !important;
+    opacity: 1;
+}
+
+.node-tag[title*="#greydark"] {
+    color: black !important;
+    background-color: #d7d6d5 !important;
+    opacity: 1;
+}
+
+
+.node-tag[title*="#brown"] {
+    color: black !important;
+    background-color: #e8d5cc !important;
+    opacity: 1;
+}
+
+.node-tag[title*="#browndark"] {
+    color: black !important;
+    background-color: #c9b8b1 !important;
+    opacity: 1;
+}
+
+
+.node-tag[title*="#orange"] {
+    color: black !important;
+    background-color: #fddecc !important;
+    opacity: 1;
+}
+.node-tag[title*="#orangedark"] {
+    color: black !important;
+    background-color: #ffd1a1 !important;
+    opacity: 1;
+}
+
+.node-tag[title*="#yellow"] {
+    color: black !important;
+    background-color: #faedcc !important;
+    opacity: 1;
+}
+.node-tag[title*="yellowdark"] {
+    color: black !important;
+    background-color: #ffeda4 !important;
+    opacity: 1;
+}
+
+.node-tag[title*="#green"] {
+    color: black !important;
+    background-color: #cce7e1 !important;
+    opacity: 1;
+}
+.node-tag[title*="#greendark"] {
+    color: black !important;
+    background-color: #a6d5cc !important;
+    opacity: 1;
+}
+
+.node-tag[title*="#blue"] {
+    color: black !important;
+    background-color: #cce4f8 !important;
+    opacity: 1;
+}
+.node-tag[title*="#bluedark"] {
+    color: black !important;
+    background-color: #a8cde4 !important;
+    opacity: 1;
+}
+
+.node-tag[title*="#purple"] {
+    color: black !important;
+    background-color: #e0d3f8 !important;
+    opacity: 1;
+}
+
+.node-tag[title*="#purpledark"] {
+    color: black !important;
+    background-color: #ccb6eb !important;
+    opacity: 1;
+}
+
+.node-tag[title*="#pink"] {
+    color: black !important;
+    background-color: #f8cce5 !important;
+    opacity: 1;
+}
+.node-tag[title*="#pinkdark"] {
+    color: black !important;
+    background-color: #f0aad0 !important;
+    opacity: 1;
+}
+
+.node-tag[title*="#red"] {
+    color: black !important;
+    background-color: #ffccd1 !important;
+    opacity: 1;
+}
+
+.node-tag[title*="#reddark"] {
+    color: black !important;
+    background-color: #ffb9b4 !important;
+    opacity: 1;
+}
+
+/* */
+.DocumentContainer.is-centerDocument .Document {
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Node.is-currentRoot > .Node-self {
+    font-weight: bold;
+}
+
+/* change color labels*/
+/* red */
+.set-color-label[data-color="1"],
+.Node-contentContainer.mod-color-label-1 {
+    background: var(--transparent) !important;
+    border-radius: 0;
+    padding-left: 6px !important;
+    border-left: 5px solid #ff808c;
+    max-width: 70%;
+}
+
+/* orange */
+.set-color-label[data-color="2"],
+.Node-contentContainer.mod-color-label-2 {
+    background: var(--transparent) !important;
+    padding-left: 6px !important;
+    border-left: 5px solid #faae82;
+    border-radius: 0;
+    max-width: 70%;
+}
+
+/* yellow */
+.set-color-label[data-color="3"],
+.Node-contentContainer.mod-color-label-3 {
+    background: var(--transparent) !important;
+    padding-left: 6px !important;
+    border-left: 5px solid #f3d486;
+    border-radius: 0;
+    max-width: 70%;
+}
+
+
+/* green */
+.set-color-label[data-color="4"],
+.Node-contentContainer.mod-color-label-4 {
+    background: var(--transparent) !important;
+    padding-left: 6px !important;
+    border-left: 5px solid #98cfc2;
+    border-radius: 0;
+    max-width: 70%;
+}
+
+/* blue */
+.set-color-label[data-color="5"],
+.Node-contentContainer.mod-color-label-5 {
+    background: var(--transparent) !important;
+    padding-left: 6px !important;
+    border-left: 5px solid #89c0ef;
+    border-radius: 0;
+    max-width: 70%;
+}
+
+/* purple */
+.set-color-label[data-color="6"],
+.Node-contentContainer.mod-color-label-6 {
+    background: var(--transparent) !important;
+    padding-left: 6px !important;
+    border-left: 5px solid #b291ee;
+    border-radius: 0;
+    max-width: 70%;
+}
+
+
+.DocumentTools-overlay {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+}
+
+
+.DocumentContainer {
+    height: calc(100% + 32px) !important;
+}
+
+.AppHeader-icon:hover {
+    border: none;
+    box-shadow: none;
+}
+
+
+.header-sync-state.mod-synced,
+.header-sync-state.mod-saved,
+.header-sync-state.mod-sync-now,
+.header-sync-state.mod-syncing {
+    visibility: visible;
+}
