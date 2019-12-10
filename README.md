@@ -1,3 +1,7 @@
-# DynalistPastelTheme
+![](https://i.imgur.com/LsUFn1Y.png)
 
-![LogoV1](https://imgur.com/a/MTnTcCj)
+This is my custom theme I made for Dynalist.
+
+#### Preview
+
+![](https://i.imgur.com/u3BhGT1.png)
